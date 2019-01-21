@@ -1,0 +1,2 @@
+src half_adder_tb.vhd
+include half_adder.dep
