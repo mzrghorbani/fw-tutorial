@@ -13,7 +13,7 @@ Prepare a work are and add the tutorial code to it:
 ```sh
 ipbb init tutorial
 cd tutorial
-ipbb add git git@github.com:alessandrothea/ipbb-tutorial.git
+ipbb add git git@github.com:mzrghorbani/fw-tutorial.git
 ```
 
 
