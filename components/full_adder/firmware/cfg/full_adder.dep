@@ -1,0 +1,2 @@
+src full_adder.vhd
+include -c adder_prj/half_adder
