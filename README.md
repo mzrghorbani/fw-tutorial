@@ -11,8 +11,8 @@ source ipbb-0.3.7/env.sh
 
 Prepare a work are and add the tutorial code to it:
 ```sh
-ipbb init tutorial
-cd tutorial
+ipbb init work
+cd work
 ipbb add git git@github.com:mzrghorbani/fw-tutorial.git
 ```
 
