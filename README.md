@@ -9,5 +9,12 @@ curl -L https://github.com/ipbus/ipbb/archive/v0.3.7.tar.gz | tar xvz
 source ipbb-0.3.7/env.sh
 ```
 
+Prepare a work are and add the tutorial code to it:
+```sh
+ipbb init tutorial
+cd tutorial
+ipbb add git git@github.com:alessandrothea/ipbb-tutorial.git
+```
+
 
 
