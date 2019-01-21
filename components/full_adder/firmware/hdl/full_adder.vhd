@@ -17,7 +17,6 @@
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -41,21 +40,21 @@ end full_adder;
 
 architecture Behavioral of full_adder is
 
-    component half_adder is 
-        port(
-            a : in std_logic;
-            b : in std_logic;
-            sum : out std_logic;
-            cout : out std_logic 
-            );
-    end component;
+--    component half_adder is 
+--       port(
+--            a : in std_logic;
+--            b : in std_logic;
+--            sum : out std_logic;
+--            cout : out std_logic 
+--            );
+--    end component;
     
     signal s1, s2, s3 : std_logic;
 
 begin
 
-    half_adder_1: half_adder port map ( a => a, b => b, sum => s1, cout => s2 );
-    half_adder_2: half_adder port map ( a => s1, b => cin, sum => sum, cout => s3 );
+    half_adder_1: entity work.half_adder port map ( a => a, b => b, sum => s1, cout => s2 );
+    half_adder_2: entity work.half_adder port map ( a => s1, b => cin, sum => sum, cout => s3 );
     cout <= s2 OR s3; 
 
 end Behavioral;
